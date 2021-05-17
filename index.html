@@ -1,122 +1,229 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="shortcut icon" type="image/x-icon" href="logo3-removebg-preview.png" >
+  <link rel="shortcut icon" type="image/x-icon" href="logo3-removebg-preview.png" >
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WEB</title>
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Kristi&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   
+  <style>
+    :root{
+    --prim-one:#d5c3ab;
+    --prim-two:#967358;
+    --prim-three:#fff;
+    --prim-four:#453835;
+    --prim-five:#3A3E31;
+
+}
+    .navbar{
+      position: relative;
+    z-index:100;
+     background: rgba(0, 0, 0, 0);
+     padding: 1em ;
+ }
+ .logo{
+  font-family: 'Melody Southern Script';
+     text-decoration: none;
+     font-weight: bold;
+     color: var(--prim-five);
+     font-size: 1.4em;
+     margin-top: -.5em;
+     margin-left: -2em;
+    /*letter-spacing: .2em;*/
+ }
+
+ span{
+     color: var(--prim-two);
+ }
+ .navbar .container{
+   font-size: 1.3em;
+     display: grid;
+     grid-template-columns: 180px auto;
+ }
+
+ .navbar nav{
+     display: flex;
+     background: none;
+     height: auto;
+     width: 100%;
+     padding: 0;
+     justify-content: flex-end;
+     margin: 0.4em -1.5em;
+ }
+
+ ul{
+  font-family:  'Poppins';
+  font-size: 1.3em;
+  font-weight:lighter;
+     list-style-type: none;
+     margin:0;
+     display: flex;
+     margin-left: 1em;
+ }
+
+  ul a{
+     color: var(--prim-five);
+     font-size: 1em;
+     text-decoration: none;
+     padding: 1em 1em;
+     margin-top: 1em;
+     
+ }
+ li{
+     top: -0.5em;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    font-size: 16px;
+ }
+    li::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--prim-five);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+
+    li:hover {
+      color: #95a5a6;
+    }
+
+    li:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+ a{
+     color: var(--prim-four);
+ }
+  .pic-ctn {
+  width: 100vw;
+  height: 200px;
+  left: -400px;
+  top: -300px;
+}
+
+.footer{
+  right: -30px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn img {
+  position: absolute;
+  top: 0;
+  border-radius: 0.5em;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+a img:nth-child(2) {
+  animation-delay: 2s;
+}
+a img:nth-child(3) {
+  animation-delay: 4s;
+}
+a img:nth-child(4) {
+  animation-delay: 6s;
+}
+a img:nth-child(5) {
+  animation-delay: 8s;
+}
+.qq{
+  right: -200px;
+}
+header.content{
+  margin-top: -2em;
+}
+header .qq{
+  margin-top: -7em;
+}
+
+  </style>
 </head>
 <body>
-    <div class="inner">
-        <div class="body-inner">
-    <div class="navbar">
-        <div class="container">
-            <a href="#" class="logo">  eu<span>noia</span></a>
-            <nav>
-                <ul>
-                    <li> <a class="current" href="2.html"> Home</a></li>
-                    <li> <a href="image.html"> Quotes</a></li>
-                    <li> <a href="index.html"> Articles</a></li>
-                    <li> <a href="book.html"> Books</a></li>
-                    <li> <a href="video.html"> Videos</a></li>
-                    <li> <a href="1.html"> About Me</a></li>
-                </ul>
-                </ul>
-            </nav>
-        </div>
-    </div>
-    <div class="header">
-
-        <header>
-            
-          <img src="logo4-removebg-preview.png" alt="" class="logor">
-          <div class="block"></div>
-          <div class="block-right"></div>
-    </header>
-        <div class="custom-shape-divider-bottom-1620630106">
-    <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-        <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-    </svg>
-</div>
-      </div></div></div>
-<div class="row">
-    <div class="column side">
-        <div class="card">
-           
-        <h4>LATEST ARTICLES</h4>
-        <br>
-        <img src="https://images.unsplash.com/photo-1530047139082-5435ca3c4614?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80">
-            <h3>8 Things Smart People Never Do or Say</h3>
-            
-            <p> Do you want to show people around you that you’re intelligent and responsible? The best way to do this is to act in a way that is in keeping with your personality and doesn’t cause any controversy or upset to the people closest to you.</p>
-           <br> <a href="https://www.makemebetter.net/8-things-smart-people-never-do-or-say/" class="button"> <b>READ MORE</b></a>
-        <br><br> 
-        <img src="https://images.unsplash.com/photo-1473186505569-9c61870c11f9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80">
-        <h3>Boost Your Productivity</h3>
-            <p>We all want to be more productive. However, we often try to achieve productivity in the wrong way. We try to add more things to our day, when instead we should be focusing on cutting out the biggest time wasters out there. Here are the 8 habits that you want to get rid off to become much more productive.</p>
-            <br> <a  class="button" href="https://www.makemebetter.net/boost-your-productivity-by-cutting-these-8-time-waster/"> READ MORE</a> 
-        </div>
+  <div class="navbar">
+    <div class="container">
+        <a href="#" class="logo">  eu<span>noia</span></a>
+        <nav>
+            <ul>
+                <li> <a class="current" href="index.html"> Home</a></li>
+                <li> <a href="image.html"> Quotes</a></li>
+                <li> <a href="articles.html"> Articles</a></li>
+                <li> <a href="book.html"> Books</a></li>
+                <li> <a href="video.html"> Videos</a></li>
+                <li> <a href="1.html"> About Me</a></li>
+            </ul>
+            </ul>
+        </nav>
     </div>
 </div>
-<div class="column middle">
-    <div class="card">
-    <img src="http://socialanxietyshortcuts.com/wp-content/uploads/2016/01/judging-1058x582.jpg" alt=" ">
-    <br> <br>
-<h1>Are you afraid of being judged?</h1>
 
-<br><p>We live alongside other people. Sometimes, we need to consider their opinions and ideas before making a choice. However, do you think you let other people’s judgments impact your life in excess?</p>
-
-<br><p>Do you stop yourself from doing what you want because you fear what others will say? Do you choose something that doesn’t work for you because of other people? This way to live can be very limiting.</p>
-
-<br><p>You should live a life where your voice is the main one. That doesn’t mean you should never listen to others. Those around you can offer valuable advice and ideas. But they should not determine how you live.</p>
-
-<br><p>When you let go of other people’s judgments, you become free. You will see that your fears were not founded. Others often don’t judge you – we are usually our own harshest judges. And even if they do, so what?</p>
-
-<br><p>Other people’s opinions have merit. But they don’t know you. They don’t know your situation. They can never know how you will, what you want, or why you do the things you do. You do know.</p>
-
-<br><p>Don’t let other people and the fear of their judgment take over your life. You deserve to be free. You deserve to make your own choices.</p>
-
-<br><p>Remember that the only one who knows your side of the story is you. If others talk, they are being ignorant. They never will know the situation as well as you.</p>
-
-<br><p>If other people talk in a negative way, so what? You still have yourself and your own ideas. If others don’t understand, what is it to you?</p>
-
-<br><p>Besides, we often feel that others notice everything – what we do, what we don’t do, and more. But that’s not true. Other people are too concerned over their own choices, mistakes, and worries. They usually don’t have time to focus on us.</p>
-
-<br><p>We are the only ones paying attention to ourselves, even if we often worry about what others notice.</p>
-
-<br><p>Take over your own life. We all deserve to live and make our own choices.</p>
-
-<br><p>Does this mean you won’t ever make any mistakes? No. But mistakes are a part of life, and making your own mistakes is a lot better than repeating the errors other people have made.</p>
-
-<br><p>You can let go of the fear of judgment. It doesn’t matter as much as you may think.</p>
-
-
-</div>
-</div>
-<div class="column side">
-    <div class="card">
-        <img src="https://images.unsplash.com/photo-1506485338023-6ce5f36692df?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=750&q=80" alt="">
-        <h3>6 Situations where you should stay silent</h3>
-        <p>“Staying silent can often be beneficial to you, and other times it can be beneficial to those around you.” Expressing your opinion is a valuable skill. There are many situations where speaking up is the best thing we can do…</P>
-           <br> <a href="https://www.makemebetter.net/6-situations-where-you-should-stay-silent/" class="button"> <b>READ MORE</b></a>
-    </div>
-</div>
-<footer>
-    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/all.js" integrity="sha384-xymdQtn1n3lH2wcu0qhcdaOpQwyoarkgLVxC/wZ5q7h9gHtxICrpcaSUfygqZGOe" crossorigin="anonymous"></script>
-    <div class="rounded-social-buttons">
-        <a class="social-button facebook" href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-f"></i></a>
-        <a class="social-button twitter" href="https://www.twitter.com/" target="_blank"><i class="fab fa-twitter"></i></a>
-        <a class="social-button linkedin" href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i></a>
-        <a class="social-button youtube" href="https://www.youtube.com/" target="_blank"><i class="fab fa-youtube"></i></a>
-        <a class="social-button instagram" href="https://www.instagram.com/" target="_blank"><i class="fab fa-instagram"></i></a>
-    </div>
-</footer>
-</body>
+    <div class="code">
+       
+        <header class="content">
+    <div style="width: 100%;">
+       <div class="qq" style="width: 50%; height: 100px; float: left; right: -300px;"><h1 class="title"><img style="width: 350px; height: 250px;" src="logo5-removebg-preview.png" alt=""></h1>
+          <div class="text" style="text-shadow: 0.5px 0.5px var(--prim-one) ;">Become the best version of yourself</div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <footer class="footer" style="text-shadow: 0.5px 0.5px var(--prim-one) ;">
+            <a href="1.html" targer="_blank" class="ripple">About</div>
+          </footer></div>
+          <div class="slider" style="margin-left: 50%; height: 100px; margin-top: 150px;"> 
+            <div class="pic-ctn">
+          <img  src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+          <img  src="https://images.unsplash.com/photo-1586380951230-e6703d9f6833?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+           <img  src="https://images.unsplash.com/photo-1592211951067-6c3ce19cca90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80" alt="" class="pic">
+         <img  src="https://images.unsplash.com/photo-1586272778341-729f9af5e0a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+           <img  src="https://images.unsplash.com/photo-1567219934540-9f75f7b87552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+            </div>
+          </div>
+    </div></header>
+    
+    <div class="wave"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+ 
+   
+    </body>
 </html>
