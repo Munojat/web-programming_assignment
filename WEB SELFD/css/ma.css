@@ -1,0 +1,48 @@
+.img{
+    border-radius: 100%;
+    width: 150px;
+    height: 150px;
+}
+body{
+background-color:#ffffff;
+;
+}
+h2{
+    text-align: center;
+    color: #f25287;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+div{
+    background-color: #f9f3f3;
+    ;
+    padding: 25px;
+    margin: 25px;
+    border: none;
+    border-radius: 15px;
+}
+p{
+    text-align: center;
+    color: #696566;
+}
+.contact-form{
+    padding: 15px;
+    margin: 15px;
+}
+.contact-form input{
+    margin: 15px;
+    width: 95%;
+    padding: 8px;
+    display: block;
+    border: none;
+    background-color: #dddddd;
+}
+button{
+    background: #f25287;
+    padding: 10px;
+    border:none;
+    border-radius: 15px;
+    outline: none;
+    width: 125px;
+    text-align: center;
+    
+}

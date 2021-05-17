@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="shortcut icon" type="image/x-icon" href="logo3-removebg-preview.png" >
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+   
+  <style>
+    :root{
+    --prim-one:#d5c3ab;
+    --prim-two:#967358;
+    --prim-three:#fff;
+    --prim-four:#453835;
+    --prim-five:#3A3E31;
+
+}
+    .navbar{
+      position: relative;
+    z-index:100;
+     background: rgba(0, 0, 0, 0);
+     padding: 1em ;
+ }
+ .logo{
+  font-family: 'Melody Southern Script';
+     text-decoration: none;
+     font-weight: bold;
+     color: var(--prim-five);
+     font-size: 1.4em;
+     margin-top: -.5em;
+     margin-left: -2em;
+    /*letter-spacing: .2em;*/
+ }
+
+ span{
+     color: var(--prim-two);
+ }
+ .navbar .container{
+   font-size: 1.3em;
+     display: grid;
+     grid-template-columns: 180px auto;
+ }
+
+ .navbar nav{
+     display: flex;
+     background: none;
+     height: auto;
+     width: 100%;
+     padding: 0;
+     justify-content: flex-end;
+     margin: 0.4em -1.5em;
+ }
+
+ ul{
+  font-family:  'Poppins';
+  font-size: 1.3em;
+  font-weight:lighter;
+     list-style-type: none;
+     margin:0;
+     display: flex;
+     margin-left: 1em;
+ }
+
+  ul a{
+     color: var(--prim-five);
+     font-size: 1em;
+     text-decoration: none;
+     padding: 1em 1em;
+     margin-top: 1em;
+     
+ }
+ li{
+     top: -0.5em;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+    font-size: 16px;
+ }
+    li::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--prim-five);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+
+    li:hover {
+      color: #95a5a6;
+    }
+
+    li:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+ a{
+     color: var(--prim-four);
+ }
+  .pic-ctn {
+  width: 100vw;
+  height: 200px;
+  left: -400px;
+  top: -300px;
+}
+
+.footer{
+  right: -30px;
+}
+
+@keyframes display {
+  0% {
+    transform: translateX(200px);
+    opacity: 0;
+  }
+  10% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  20% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  30% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(-200px);
+    opacity: 0;
+  }
+}
+
+.pic-ctn {
+  position: relative;
+  width: 100vw;
+  height: 300px;
+  margin-top: 15vh;
+}
+
+.pic-ctn img {
+  position: absolute;
+  top: 0;
+  border-radius: 0.5em;
+  left: calc(50% - 100px);
+  opacity: 0;
+  animation: display 10s infinite;
+}
+
+a img:nth-child(2) {
+  animation-delay: 2s;
+}
+a img:nth-child(3) {
+  animation-delay: 4s;
+}
+a img:nth-child(4) {
+  animation-delay: 6s;
+}
+a img:nth-child(5) {
+  animation-delay: 8s;
+}
+.qq{
+  right: -200px;
+}
+header.content{
+  margin-top: -2em;
+}
+header .qq{
+  margin-top: -7em;
+}
+
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <div class="container">
+        <a href="#" class="logo">  eu<span>noia</span></a>
+        <nav>
+            <ul>
+                <li> <a class="current" href="2.html"> Home</a></li>
+                <li> <a href="image.html"> Quotes</a></li>
+                <li> <a href="index.html"> Articles</a></li>
+                <li> <a href="book.html"> Books</a></li>
+                <li> <a href="video.html"> Videos</a></li>
+                <li> <a href="1.html"> About Me</a></li>
+            </ul>
+            </ul>
+        </nav>
+    </div>
+</div>
+
+    <div class="code">
+       
+        <header class="content">
+    <div style="width: 100%;">
+       <div class="qq" style="width: 50%; height: 100px; float: left; right: -300px;"><h1 class="title"><img style="width: 350px; height: 250px;" src="logo5-removebg-preview.png" alt=""></h1>
+          <div class="text" style="text-shadow: 0.5px 0.5px var(--prim-one) ;">Become the best version of yourself</div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <footer class="footer" style="text-shadow: 0.5px 0.5px var(--prim-one) ;">
+            <a href="1.html" targer="_blank" class="ripple">About</div>
+          </footer></div>
+          <div class="slider" style="margin-left: 50%; height: 100px; margin-top: 150px;"> 
+            <div class="pic-ctn">
+          <img  src="https://images.unsplash.com/photo-1543002588-bfa74002ed7e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+          <img  src="https://images.unsplash.com/photo-1586380951230-e6703d9f6833?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+           <img  src="https://images.unsplash.com/photo-1592211951067-6c3ce19cca90?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=282&q=80" alt="" class="pic">
+         <img  src="https://images.unsplash.com/photo-1586272778341-729f9af5e0a1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+           <img  src="https://images.unsplash.com/photo-1567219934540-9f75f7b87552?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=334&q=80" alt="" class="pic">
+            </div>
+          </div>
+    </div></header>
+    
+    <div class="wave"></div>
+    <div class="wave wave2"></div>
+    <div class="wave wave3"></div>
+ 
+   
+    </body>
+</html>

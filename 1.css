@@ -1,0 +1,260 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+    --prim-one:#d5c3ab;
+    --prim-two:#967358;
+    --prim-three:#fff;
+    --prim-four:#453835;
+    --prim-five:#3A3E31;
+
+}
+@font-face {
+    font-family: 'Melody Southern Script';
+    src: url(MelodySouthern-Script.otf);
+}
+body{
+    background: var(--prim-one);
+    margin: 0;
+    padding: 0;
+    font-family:  'Poppins';
+ } 
+ .navbar{
+     background: rgba(0, 0, 0, 0);
+     padding: 1em ;
+ }
+ .logo{
+    font-family: 'Melody Southern Script';
+     text-decoration: none;
+     font-weight: bold;
+     color: var(--prim-five);
+     font-size: 1.2em;
+    /*letter-spacing: .2em;*/
+ }
+
+ span{
+     color: var(--prim-two);
+ }
+ .navbar .container{
+    
+     display: grid;
+     grid-template-columns: 180px auto;
+ }
+
+ .navbar nav{
+     display: flex;
+     background: none;
+     height: auto;
+     width: 100%;
+     padding: 0;
+     justify-content: flex-end;
+ }
+
+ ul{
+     list-style-type: none;
+     margin:0;
+     display: flex;
+ }
+
+  ul a{
+     color: var(--prim-five);
+     font-size: 1em;
+     text-decoration: none;
+     padding: 1em 1em;
+ }
+ li.current a{
+     font-weight: bold;
+ }
+
+ a{
+     color: var(--prim-four);
+ }
+ li{
+     top: -0.5em;
+    position: relative;
+    display: block;
+    transition: 0.5s;
+ }
+    li::after {
+      position: absolute;
+      content: "";
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 3px;
+      background: var(--prim-five);
+      transform: scaleX(0);
+      transform-origin: right;
+      transition: transform 0.5s;
+    }
+
+    li:hover {
+      color: #95a5a6;
+    }
+
+    li:hover::after {
+      transform: scaleX(1);
+      transform-origin: left;
+    }
+  
+ section.hero{
+     text-align: center; 
+ }
+ section{
+    padding: 5em 4em;
+ }
+
+
+.hero-img{
+    width: 200px;
+    height: auto;
+    margin-top: -8em;
+    margin-left: 5em;
+    text-align: center;
+    display: inline-block;
+}
+.hero .container{
+    display: inline-block;
+    justify-content: center;
+    
+}
+
+section.second-section{
+    background: linear-gradient(90deg, var(--prim-one) 50%, var(--prim-two) 50%);
+    color: var(--prim-four);
+   display: grid;
+   top: -2em;
+    grid-template-columns: 50% auto;
+    justify-content: space-between;
+}
+
+.ss-p{
+    padding-right: 10em;
+    animation: change 0.5s 0.3s forwards;
+    padding-left: 2em;
+}
+.ss-p span{
+    font-weight: bold;
+    line-height: 1.3em;
+    letter-spacing: .9em;
+    margin-top: -3em;
+}
+section.second-section img{
+
+    height: 500px;
+    width: auto;
+    right: -2em;
+  
+   
+}
+.div-for-img{
+    height: 460px;
+    width: 310px;
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+    padding-left: 2em;
+    background-color: #3A3E31;
+    margin-left: -42em;
+    
+}
+section.second-section::before {
+        content: '';
+        position: absolute;
+        width: 5%;
+        height: 45em;
+        background: var(--prim-five);
+        left: 0;
+        margin-top:-5.2em;
+    }
+
+h2 {
+    font-size: 1.5em;
+    font-weight: bolder;
+    letter-spacing: .3em;
+    color: var(--prim-one);
+}
+
+label {
+    letter-spacing: .3em;
+    color: var(--prim-one);
+    text-shadow: 0.1px 0.1px var(--prim-four);
+    display: block;
+    font-size: 1em;
+    margin-bottom: .5em;
+}
+
+input, textarea {
+    width: 100%;
+    padding: .8em;
+    background-color: rgba(213,195,171,0.6);    
+    margin-bottom: 1em;
+    border-radius: .3em;
+    border: 1px solid var(--prim-four);
+    box-sizing: border-box;
+}
+
+input[type="submit"] {
+    color: var(--prim-one);
+    text-decoration:none;
+    background: none;
+    width: 40%;
+    padding: 7px 10px;
+    margin: 10px auto 0 auto;
+    cursor: pointer;
+    font-weight:400;
+    border: 2px solid;
+    border-radius: 99em;
+    outline:none;
+    transition: all 0.3s;
+    font-size: 1em;
+    letter-spacing: 0.3em;
+    width: unset;
+    cursor: pointer;
+}
+
+input.send-message-cta:hover{
+    background-color: #453835;
+    color: var(--prim-three);
+    font-weight:600;
+    border-color:white;
+    transform: scale(1.05);
+}
+
+.contact-section {
+    position: relative;
+
+}
+.contact-section    .container {
+        display: flex;
+        margin-left: 10em;
+        margin-top: 5em;
+
+    }
+    .contact-section {
+        background: url( pexels-fauxels-3184641.jpg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        position: relative;
+        background-position: center center;
+        padding:0;
+        right: 0;
+        width:100%;
+        height:600px;
+        background-attachment: fixed;
+    }
+
+    .contact-section .inner{
+        position:absolute;
+        width:100%;
+        height:100%;
+        border:1px solid black;
+        background-color:rgba(69,56,53,0.7);
+    }
+    .h1{
+        font-family: 'Melody Southern Script';
+        color: var(--prim-four);
+        font-size: 2.5em;
+        
+    }
+    
